@@ -1,0 +1,33 @@
+{ "completed_in": 0.025,
+  "max_id": 203222207869104129,
+  "max_id_str": "203222207869104129",
+  "next_page": "?page=2&max_id=203222207869104129&q=gaga&rpp=1",
+  "page": 1,
+  "query": "gaga",
+  "refresh_url": "?since_id=203222207869104129&q=gaga",
+  "results_per_page": 1,
+  "since_id": 0,
+  "since_id_str": "0",
+
+  "results": [
+    {"created_at": "Thu, 17 May 2012 20:35:24 +0000",
+     "from_user": "Sweetie_Soniia",
+     "from_user_id": 191860552,
+     "from_user_id_str": "191860552",
+     "from_user_name": "Sonia kotecha",
+     "geo": null,
+     "id": 203222207869104129,
+     "id_str": "203222207869104129",
+     "iso_language_code": "es",
+     "metadata": {"result_type": "recent"},
+     "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/2212447496\/Meeeeee_normal.jpg",
+     "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/2212447496\/Meeeeee_normal.jpg",
+     "source": "&lt;a href=&quot;http:\/\/www.facebook.com\/twitter&quot; rel=&quot;nofollow&quot;&gt;Facebook&lt;\/a&gt;",
+     "text": "RT @LG_MonsterBlog: LADY GAGA ENTRE LAS CELEBRIDADES M\u00c1S PODEROSAS DEL MUNDO!\n\nLa revista Forbes, que se dedica al mundo financiero y... http:\/\/t.co\/sYmq1B3e",
+     "to_user": null,
+     "to_user_id": 0,
+     "to_user_id_str": "0",
+     "to_user_name": null
+    }
+  ]
+}
