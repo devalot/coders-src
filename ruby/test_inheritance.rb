@@ -1,13 +1,16 @@
 ################################################################################
 require('test/unit')
-require(File.expand_path('fortune.rb', File.dirname(__FILE__)))
+require('mocha')
+require(File.expand_path('inheritance.rb', File.dirname(__FILE__)))
 
 ################################################################################
-class TestFortune < Test::Unit::TestCase
+class TestInheritance < Test::Unit::TestCase
 
   ##############################################################################
-  def test_fortune
-    f = Fortune.new.fortune
-    assert_kind_of(String, f)
+  def test_should_call_puts
+    m = MiniCart.new
+    m.respond_to?(:show)
+    m.expects(:puts)
+    m.show
   end
 end

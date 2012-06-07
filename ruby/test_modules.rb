@@ -1,13 +1,16 @@
 ################################################################################
 require('test/unit')
-require(File.expand_path('fortune.rb', File.dirname(__FILE__)))
+require('mocha')
+require(File.expand_path('modules.rb', File.dirname(__FILE__)))
 
 ################################################################################
-class TestFortune < Test::Unit::TestCase
+class TestModules < Test::Unit::TestCase
 
   ##############################################################################
-  def test_fortune
-    f = Fortune.new.fortune
-    assert_kind_of(String, f)
+  def test_should_call_puts
+    f = Favorites.new
+    assert(f.respond_to?(:peanut_butter))
+    f.expects(:puts)
+    f.peanut_butter
   end
 end

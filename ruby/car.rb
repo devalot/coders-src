@@ -17,7 +17,7 @@ end
 # {END}
 
 # {BEGIN: usage}
-car = Car.new
-car.go
-car.stop
+herbie = Car.new
+herbie.go
+herbie.stop
 # {END}
