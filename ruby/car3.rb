@@ -3,8 +3,8 @@ class Car
 
   attr_reader(:speed)
 
-  def initialize
-    @speed = 0
+  def initialize (speed)
+    @speed = speed
   end
 
   def faster
@@ -24,8 +24,8 @@ end
 # {END}
 
 # {BEGIN: usage}
-herbie = Car.new
-herbie.speed # => 0
+herbie = Car.new(25)
+herbie.speed # => 25
 herbie.faster
-herbie.speed # => 35
+herbie.speed # => 60
 # {END}
