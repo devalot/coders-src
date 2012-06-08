@@ -11,7 +11,11 @@ define TEST_SCRIPT
 .PHONEY: test_$(1)
 test: test_$(1)
 test_$(1):
-	ruby test_$(1).rb
+ifeq ($(wildcard test_$(1).rb),)
+	ruby test_syntax.rb $(1).rb
+else
+	ruby -rubygems test_$(1).rb
+endif
 endef
 
 ##############################################################################
