@@ -1,4 +1,3 @@
-# {BEGIN: inheritance}
 class ShoppingCart
   def initialize
     @max_items = 50
@@ -15,10 +14,7 @@ class MiniCart < ShoppingCart
     @max_items = 10
   end
 end
-# {END}
 
 if $0 == __FILE__
-# {BEGIN: usage}
-MiniCart.new.show
-# {END}
+  MiniCart.new.show
 end
