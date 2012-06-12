@@ -8,9 +8,9 @@ class TestRockPaperScissors < Test::Unit::TestCase
   ##############################################################################
   def test_rps
     rps = RockPaperScissors.new
-    assert_equal("rock", rps.play("rock", "scissors"))
-    assert_equal("paper", rps.play("paper", "rock"))
+    assert_equal("rock",     rps.play("rock", "scissors"))
+    assert_equal("paper",    rps.play("paper", "rock"))
     assert_equal("scissors", rps.play("scissors", "paper"))
-    assert_equal("paper", rps.play("rock", "paper"))
+    assert_equal("paper",    rps.play("rock", "paper"))
   end
 end
