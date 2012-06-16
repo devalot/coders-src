@@ -11,7 +11,9 @@ define TEST_SCRIPT
 .PHONEY: test_$(1)
 test: test_$(1)
 test_$(1):
-ifeq ($(wildcard test_$(1).rb),)
+ifneq ($(shell grep Test::Unit::TestCase $(1).rb),)
+	ruby -rubygems $(1).rb
+else ifeq ($(wildcard test_$(1).rb),)
 	ruby test_syntax.rb $(1).rb
 else
 	ruby -rubygems test_$(1).rb
