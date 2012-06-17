@@ -1,0 +1,12 @@
+h1 {
+  font-size: 28px;
+  color: red;
+}
+
+p em {
+  color: #0000ff;
+}
+
+p em, ul em {
+  text-decoration: line-through;
+}
