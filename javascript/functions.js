@@ -17,5 +17,7 @@ function oneAndOne () {
   return 1 + 1;
 }
 
-var x = oneAndOne;   // x is a function
 var y = oneAndOne(); // y is 2
+
+var x = oneAndOne;   // x is a function
+x(); // => 2
